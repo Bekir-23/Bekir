@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        img {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-between;
+            width: 80%;
+            margin: 0 auto;
+            transition: transform 0.3s, box-shadow 0.3s; /* Add transition for smooth effect */
+            cursor: pointer;
+        }
+
+        img:hover {
+            transform: scale(1.1); /* Add scaling effect on hover */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Add box shadow for emphasis */
+        }
+    </style>
+
+</head>
+<body>
+
+<img src="p1.png" width="500" alt="">
+<img src="p2.png" width="500" alt="">
+<img src="p3.png" width="500" alt="">
+<img src="p4.png" width="500" alt="">
+<img src="p5.png" width="500" alt="">
+<img src="p6.jpg" width="500" alt="">
+<img src="p7.jpg" width="500" alt="">
+
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+<script>
+    $(document).ready(function () {
+        // Smooth scroll to the top when an image is clicked
+        $('img').click(function () {
+            $('html, body').animate({
+                scrollTop: 0
+            }, 800);
+        });
+    });
+</script>
+
+</body>
+</html>

@@ -1,0 +1,51 @@
+@media screen and (max-width:770px) {
+
+.navbar{
+    width: 90%;
+}
+.logo h2 a{
+ font-size: 20px;   
+}
+#menu_bar{
+  display: grid;
+  color: #fff;  
+  position: absolute;
+  right: 5%;
+  top: 20%;
+  border: 1px solf #fff;
+  width: 30px;
+  height: 30px;
+  justify-content: center;
+  align-items: 2px;
+  cursor: pointer;
+}
+
+.nav_links{
+    flex-direction: column;
+    position: absolute;
+    background: #242920;
+    width: 100px;
+    left: 0;
+    padding: 0;
+
+}
+.nav_links li a{
+    border-bottom: 1px solid #fff;
+    display: block;
+    border-radius: 0;
+    padding: 10px 0 ;
+    margin: 0 20px;
+}
+.nav_links li:last-child a{
+    border-bottom: none;
+}
+.inner_anasayfa{
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+
+}
+.child_anasayfa{
+    flex-basis: 100%;
+}
+
+}
